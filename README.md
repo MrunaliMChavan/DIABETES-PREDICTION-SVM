@@ -1,12 +1,7 @@
 # DIABETES-PREDICTION-SVM
 
-The project aims to predict diabetes in individuals based on various health indicators. It follows a structured machine learning lifecycle, including data collection, preprocessing, exploratory data analysis (EDA), model development, tuning, and evaluation. 
+This project focuses on developing a robust machine learning model to predict whether an individual is diabetic based on various health indicators. The workflow begins with importing necessary dependencies and collecting data from the "diabetes.csv" file. Subsequently, a thorough data analysis is conducted to understand the dataset's structure and distribution. Visualizations such as histograms, pie charts, pair plots, and correlation heatmaps are employed for exploratory data analysis (EDA) to gain insights into the relationships between variables and the target variable ('Outcome').
 
-Key highlights include:
+Following data preprocessing steps, including handling missing values, scaling features, and splitting the dataset into training and testing sets, a Support Vector Machine (SVM) model with a linear kernel is trained. Model performance is evaluated using accuracy scores, confusion matrices, classification reports, and ROC curves. Model tuning is then performed using grid search with cross-validation to optimize hyperparameters and enhance predictive accuracy.
 
-Utilization of Support Vector Machine (SVM) with linear kernel initially.
-Model evaluation through accuracy scores, confusion matrices, classification reports, and ROC curves.
-Optimization of model performance using grid search with cross-validation.
-Exploration of alternative SVM kernels (sigmoid and RBF) for comparison.
-Mitigation of class imbalance using Synthetic Minority Over-sampling Technique (SMOTE).
-Implementation of a user-friendly interface for individual diabetes prediction based on input features.
+Additionally, different SVM kernels (sigmoid and RBF) are explored to assess their impact on model performance. To mitigate class imbalance, the Synthetic Minority Over-sampling Technique (SMOTE) is applied to oversample the minority class. Finally, a user-friendly interface is developed for easy input of feature values, allowing the model to predict whether an individual is diabetic or not. 
